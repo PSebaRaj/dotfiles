@@ -33,7 +33,7 @@ ZSH_AUTOSUGGEST_HIGHLIGHT_STYLE='fg=002'
 # Runtime paths
 export JAVA_HOME=/Library/Internet\ Plug-Ins/JavaAppletPlugin.plugin/Contents/Home
 export GO_PATH="$PATH:$(go env GOPATH)/bin"
-export PATH="$PATH:~/node_modules/.bin"
+export NODE_PATH="$PATH:~/node_modules/.bin"
 
 export GIT_EDITOR=$VIM
 
