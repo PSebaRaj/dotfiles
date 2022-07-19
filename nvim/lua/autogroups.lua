@@ -8,6 +8,11 @@ vim.api.nvim_create_autocmd({"BufWritePre"}, {
     command = "%s/\\s\\+$//e",
 })
 
+vim.api.nvim_create_autocmd({"BufWritePre"}, {
+    group = PSEBARAJ,
+    pattern = "*.tsx,*.ts,*.jsx,*.js",
+    command = "EslintFixAll",
+})
 
 
 -- NEED TO PORT TO LUA:

@@ -28,6 +28,10 @@ return require('packer').startup(function(use)
 	-- Formatter (if not using native LSP Formatter)
 	use 'sbdchd/neoformat' -- using this because native isn't working as intended locally
 
+	-- Prettier
+	use('jose-elias-alvarez/null-ls.nvim')
+	use('MunifTanjim/prettier.nvim')
+
 	-- Snippets
 	use 'L3MON4D3/LuaSnip'
 	use 'saadparwaiz1/cmp_luasnip'

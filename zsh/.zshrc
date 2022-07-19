@@ -105,5 +105,5 @@ alias todo=". findTODO.sh"
 alias extract=". extractAll.sh"
 alias findfiles=". findfiles.sh"
 
-alias zoo="zsh $XDG_CONFIG_HOME//bin/zooactions.sh"
+alias zoo="zsh $XDG_CONFIG_HOME/bin/zooactions.sh"
 
