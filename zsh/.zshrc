@@ -84,6 +84,7 @@ PATH=${PATH}:$XDG_CONFIG_HOME/bin
 
 # easy of use
 alias nv="nvim"
+alias tmux="tmux -f ~/.psebconfig/tmux/tmux.conf"
 
 alias lines="git ls-files | xargs wc -l"
 alias hg="history | grep"
