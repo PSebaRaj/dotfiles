@@ -1,4 +1,3 @@
-
 vim.opt.nu = true
 vim.opt.relativenumber = true
 
@@ -40,4 +39,4 @@ vim.opt.colorcolumn = "100"
 vim.opt.splitright = true
 
 -- disable for actual use, just for ease of setup
-vim.opt.mouse = "a"
+-- vim.opt.mouse = "a"

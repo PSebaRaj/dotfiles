@@ -29,14 +29,37 @@ require('telescope').setup{
   }
 }
 
+-- Find file by name
 vim.keymap.set("n", "<Leader>ff", function ()
 	require('telescope.builtin').find_files()
-end, { })
+end, { noremap = true })
 
+-- Grep (prefer this over live_grep)
 vim.keymap.set("n", "<Leader>fg", function()
     require('telescope.builtin').grep_string({ search = vim.fn.input("Grep For > ")})
-end, { })
+end, { noremap = true })
 
+-- Grep for word under cursor
+vim.keymap.set("n", "<Leader>fw", function()
+    require('telescope.builtin').grep_string()
+end, { noremap = true })
+
+-- Find files by name, including hidedn files
 vim.keymap.set("n", "<Leader>fh", function()
 	require('telescope.builtin').find_files({hidden = true})
-end, { })
+end, { noremap = true })
+
+-- Open Telescope in range of ENTIRE git repo
+vim.keymap.set("n", "<Leader>fa", function()
+	require('telescope.builtin').git_files({hidden = true})
+end, { noremap = true })
+
+-- View changes in git repo
+vim.keymap.set("n", "<Leader>git", function()
+	require('telescope.builtin').git_status({hidden = true})
+end, { noremap = true })
+
+-- TS is love, TS is life
+-- vim.keymap.set("n", "<Leader>ft", function()
+	-- require('telescope.builtin').treesitter({hidden = true})
+-- end, { noremap = true })
