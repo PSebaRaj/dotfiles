@@ -72,6 +72,7 @@ plugins=(
 	zsh-syntax-highlighting
 )
 
+export TERM=xterm-256color
 
 source $ZSH/oh-my-zsh.sh
 
@@ -107,4 +108,31 @@ alias extract=". extractAll.sh"
 alias findfiles=". findfiles.sh"
 
 alias zoo="zsh $XDG_CONFIG_HOME/bin/zooactions.sh"
+
+typeset -A ZSH_HIGHLIGHT_STYLES
+ZSH_HIGHLIGHT_STYLES[default]=none
+ZSH_HIGHLIGHT_STYLES[unknown-token]='fg=001'
+ZSH_HIGHLIGHT_STYLES[reserved-word]='fg=002'
+ZSH_HIGHLIGHT_STYLES[alias]='fg=012'
+ZSH_HIGHLIGHT_STYLES[builtin]='fg=012'
+ZSH_HIGHLIGHT_STYLES[function]='fg=012'
+ZSH_HIGHLIGHT_STYLES[command]='fg=012'
+ZSH_HIGHLIGHT_STYLES[precommand]=none
+ZSH_HIGHLIGHT_STYLES[commandseparator]=none
+ZSH_HIGHLIGHT_STYLES[hashed-command]=none
+ZSH_HIGHLIGHT_STYLES[path]=none
+ZSH_HIGHLIGHT_STYLES[globbing]=none
+ZSH_HIGHLIGHT_STYLES[history-expansion]='fg=012'
+ZSH_HIGHLIGHT_STYLES[single-hyphen-option]=none
+ZSH_HIGHLIGHT_STYLES[double-hyphen-option]=none
+ZSH_HIGHLIGHT_STYLES[back-quoted-argument]=none
+ZSH_HIGHLIGHT_STYLES[single-quoted-argument]='fg=002'
+ZSH_HIGHLIGHT_STYLES[double-quoted-argument]='fg=002'
+ZSH_HIGHLIGHT_STYLES[dollar-double-quoted-argument]='fg=002'
+ZSH_HIGHLIGHT_STYLES[back-double-quoted-argument]='fg=002'
+ZSH_HIGHLIGHT_STYLES[assign]=none
+
+ZSH_AUTOSUGGEST_HIGHLIGHT_STYLE='fg=003'
+
+
 
