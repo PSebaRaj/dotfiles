@@ -38,5 +38,7 @@ vim.opt.colorcolumn = "100"
 
 vim.opt.splitright = true
 
+vim.opt.laststatus = 3
+
 -- disable for actual use, just for ease of setup
 -- vim.opt.mouse = "a"

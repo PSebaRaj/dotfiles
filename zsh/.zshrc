@@ -74,6 +74,9 @@ plugins=(
 
 export TERM=xterm-256color
 
+export LC_ALL=en_IN.UTF-8
+export LANG=en_IN.UTF-8
+
 source $ZSH/oh-my-zsh.sh
 
 
@@ -86,6 +89,8 @@ PATH=${PATH}:$XDG_CONFIG_HOME/bin
 # easy of use
 alias nv="nvim"
 alias tmux="tmux -f ~/.psebconfig/tmux/tmux.conf"
+alias top="vtop --theme nord"
+alias oldtop="/usr/bin/top"
 
 alias lines="git ls-files | xargs wc -l"
 alias hg="history | grep"
@@ -106,6 +111,7 @@ alias count=". countFile.sh"
 alias todo=". findTODO.sh"
 alias extract=". extractAll.sh"
 alias findfiles=". findfiles.sh"
+alias chtsh=". tmux-cht.sh"
 
 alias zoo="zsh $XDG_CONFIG_HOME/bin/zooactions.sh"
 
