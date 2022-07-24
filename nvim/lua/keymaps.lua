@@ -17,10 +17,13 @@ vim.api.nvim_set_keymap('n', '<Leader>ws', '<C-w>s', opts)
 vim.api.nvim_set_keymap('n', '<Leader>wv', '<C-w>v', opts)
 
 -- Move lines or (visually selected) block up and down
-vim.api.nvim_set_keymap('i', '∆', '<Esc>:m .+1<CR>==gi', opts)
-vim.api.nvim_set_keymap('i', '˚', '<Esc>:m .-2<CR>==gi', opts)
-vim.api.nvim_set_keymap('v', '∆', "<cmd>m '>+1<CR>gv=gv", opts)
-vim.api.nvim_set_keymap('v', '˚', "<cmd>m '<-2<CR>gv=gv", opts)
+vim.api.nvim_set_keymap('v', "J", ":m '>+1<CR>gv=gv", opts)
+vim.api.nvim_set_keymap('v', "K", ":m '<-2<CR>gv=gv", opts)
+
+--vim.api.nvim_set_keymap('i', '∆', '<Esc>:m .+1<CR>==gi', opts)
+--vim.api.nvim_set_keymap('i', '˚', '<Esc>:m .-2<CR>==gi', opts)
+--vim.api.nvim_set_keymap('v', '∆', "<cmd>m '>+1<CR>gv=gv", opts)
+--vim.api.nvim_set_keymap('v', '˚', "<cmd>m '<-2<CR>gv=gv", opts)
 
 -- Move split panes to left/bottom/top/right
 vim.api.nvim_set_keymap('n', '˙', '<C-W>H', opts)
