@@ -74,8 +74,8 @@ plugins=(
 
 export TERM=xterm-256color
 
-export LC_ALL=en_IN.UTF-8
-export LANG=en_IN.UTF-8
+#export LC_ALL=en_IN.UTF-8
+#export LANG=en_IN.UTF-8
 
 source $ZSH/oh-my-zsh.sh
 
@@ -88,7 +88,8 @@ PATH=${PATH}:$XDG_CONFIG_HOME/bin
 
 # easy of use
 alias nv="nvim"
-alias tmux="tmux -f ~/.psebconfig/tmux/tmux.conf"
+alias tn="tmux -u -f ~/.psebconfig/tmux/tmux.conf new -s"
+alias ta="tmux -u -f ~/.psebconfig/tmux/tmux.conf attach -t"
 alias top="vtop --theme nord"
 alias oldtop="/usr/bin/top"
 
