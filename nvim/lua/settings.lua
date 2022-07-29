@@ -35,6 +35,7 @@ vim.opt.signcolumn = "yes"
 vim.opt.cmdheight = 1
 
 vim.opt.colorcolumn = "100"
+vim.opt.cursorline = true
 
 vim.opt.splitright = true
 

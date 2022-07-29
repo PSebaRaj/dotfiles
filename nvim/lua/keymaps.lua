@@ -20,11 +20,6 @@ vim.api.nvim_set_keymap('n', '<Leader>wv', '<C-w>v', opts)
 vim.api.nvim_set_keymap('v', "J", ":m '>+1<CR>gv=gv", opts)
 vim.api.nvim_set_keymap('v', "K", ":m '<-2<CR>gv=gv", opts)
 
---vim.api.nvim_set_keymap('i', '∆', '<Esc>:m .+1<CR>==gi', opts)
---vim.api.nvim_set_keymap('i', '˚', '<Esc>:m .-2<CR>==gi', opts)
---vim.api.nvim_set_keymap('v', '∆', "<cmd>m '>+1<CR>gv=gv", opts)
---vim.api.nvim_set_keymap('v', '˚', "<cmd>m '<-2<CR>gv=gv", opts)
-
 -- Move split panes to left/bottom/top/right
 vim.api.nvim_set_keymap('n', '˙', '<C-W>H', opts)
 vim.api.nvim_set_keymap('n', '∆', '<C-W>J', opts)
@@ -69,5 +64,14 @@ vim.api.nvim_set_keymap('n', '<Leader>rw', '<cmd>lua REPL_ALL()<cr>', opts)
 vim.api.nvim_set_keymap('n', '<Leader>ri', '<cmd>lua REPL_A_CASE_INSEN()<cr>', opts)
 
 
-
-
+-- UNBINDINGS
+-- ARROW KEYS
+-- vim.api.nvim_set_keymap('n', '<Up>', ':echoe "Use k" <cr>', opts)
+-- vim.api.nvim_set_keymap('n', '<Down>', ':echoe "Use j" <cr>', opts)
+-- vim.api.nvim_set_keymap('n', '<Left>', ':echoe "Use h" <cr>', opts)
+-- vim.api.nvim_set_keymap('n', '<Right>', ':echoe "Use l" <cr>', opts)
+--
+-- vim.api.nvim_set_keymap('i', '<Up>', '<esc>:echoe "Use k" <cr>', opts)
+-- vim.api.nvim_set_keymap('i', '<Down>', '<esc>:echoe "Use j" <cr>', opts)
+-- vim.api.nvim_set_keymap('i', '<Left>', '<esc>:echoe "Use h" <cr>', opts)
+-- vim.api.nvim_set_keymap('i', '<Right>', '<esc>:echoe "Use l" <cr>', opts)
