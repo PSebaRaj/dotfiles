@@ -1,0 +1,23 @@
+#!/bin/sh
+
+## autoload vcs and colors
+autoload -Uz vcs_info
+autoload -U colors && colors
+
+# enable only git
+zstyle ':vcs_info:*' enable git
+
+# setup a hook that runs before every ptompt.
+precmd_vcs_info() { vcs_info }
+precmd_functions+=( precmd_vcs_info )
+setopt prompt_subst
+
+zstyle ':vcs_info:git*+set-message:*' hooks git-untracked
+
+zstyle ':vcs_info:*' check-for-changes true
+# zstyle ':vcs_info:git:*' formats " %r/%S %b %m%u%c "
+zstyle ':vcs_info:git:*' formats " %{$fg_bold[blue]%}(%{$fg[yellow]%}%m%u%c%{$fg[yellow]%}%{$fg_bold[blue]%} %b%{$fg_bold[blue]%})"
+
+PROMPT="%B%{$fg_bold[blue]%}[%{$fg[white]%}p%{$fg[red]%}@%{$fg[white]%}s%{$fg_bold[blue]%}] %(?:%{$fg_bold[white]%}➜ :%{$fg_bold[red]%}➜ )%{$fg[blue]%}%c%{$reset_color%}"
+PROMPT+="\$vcs_info_msg_0_ "
+# https://stevelosh.com/blog/2010/02/my-extravagant-zsh-prompt/
