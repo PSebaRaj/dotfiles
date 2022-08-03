@@ -34,7 +34,11 @@ source "$ZDOTDIR/.zshrc"
 export JAVA_HOME=/Library/Internet\ Plug-Ins/JavaAppletPlugin.plugin/Contents/Home
 
 export NODE_PATH="$PATH:~/node_modules/.bin"
-export PATH="$PATH:$(go env GOPATH)/bin"
+export GO_PATH="$PATH:$(go env GOPATH)/bin"
+
+export PYENV_ROOT="$HOME/.pyenv"
+command -v pyenv >/dev/null || export PATH="$PYENV_ROOT/bin:$PATH"
+eval "$(pyenv init -)"
 
 export GIT_EDITOR=$VIM
 
