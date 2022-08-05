@@ -18,6 +18,8 @@ return require('packer').startup(function(use)
 
 	-- Native Nvim LSP
 	use 'neovim/nvim-lspconfig'
+	-- LSP Icons
+	use 'onsails/lspkind.nvim'
 
 	-- Autocomplete for Nvim LSP
 	use 'hrsh7th/cmp-nvim-lsp'

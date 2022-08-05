@@ -1,8 +1,11 @@
+local icons = require "icons"
+
 require('telescope').setup{
   defaults = {
     -- Default configuration for telescope goes here:
     -- config_key = value,
-    mappings = {
+    prompt_prefix = icons.ui.Telescope .. " ",
+	mappings = {
       i = {
         -- map actions.which_key to <C-h> (default: <C-/>)
         -- actions.which_key shows the mappings for your picker,
