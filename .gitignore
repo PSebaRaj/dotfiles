@@ -1,8 +1,9 @@
+/zsh/plugins
+/zsh/.zsh_sessions
 .zcompdump-Patrick’s MacBook Pro-5.8.1.MB-Pro.local.27686
 .zcompdump-Patrick’s MacBook Pro-5.8.1
 .zsh_history
 
-/zsh/plugins
-/lazygit
-/zsh/.zsh_sessions
+/lazygit/state.yml
+
 /configstore

@@ -1,16 +1,7 @@
-# If you come from bash you might have to change your $PATH.
-# export PATH=$HOME/bin:/usr/local/bin:$PATH
-
-# Path to your oh-my-zsh installation.
-export ZSH="$HOME/.oh-my-zsh"
-
 export TERM=xterm-256color
 
 #export LC_ALL=en_IN.UTF-8
 #export LANG=en_IN.UTF-8
-
-#ZSH_THEME="agnoster"
-#source $ZSH/oh-my-zsh.sh
 
 setopt appendhistory
 
@@ -60,18 +51,27 @@ autoload -Uz compinit && compinit
 # my personal scripts
 PATH=${PATH}:$XDG_CONFIG_HOME/bin
 
-# easy of use
+# neovim
 alias nv="nvim"
 alias nvimrc="nvim ~/.psebconfig/nvim"
+
+# lazygit
+alias lg="lazygit"
+
+# tmux
 alias tn="tmux -u -f ~/.psebconfig/tmux/tmux.conf new -s"
 alias ta="tmux -u -f ~/.psebconfig/tmux/tmux.conf attach -t"
+
+# (v)top
 alias top="vtop --theme nord"
 alias oldtop="/usr/bin/top"
 
+# misc
 alias lines="git ls-files | xargs wc -l"
 alias hg="history | grep"
 alias weather="curl http://wttr.in/"
 
+# aliases from oh-my-zsh
 alias mv="mv -i"
 alias history='fc -l 1'
 alias l='ls -lah'
@@ -80,6 +80,7 @@ alias ll='ls -lh'
 alias ls='ls -G'
 alias lsa='ls -lah'
 alias md='mkdir -p'
+
 # navigation
 alias ..="cd .."
 alias ...="cd ../.."
@@ -97,8 +98,10 @@ alias extract=". extractAll.sh"
 alias findfiles=". findfiles.sh"
 alias chtsh=". tmux-cht.sh"
 
+# My zoo script -- for interacting with Yale's Zoo
 alias zoo="zsh $XDG_CONFIG_HOME/bin/zooactions.sh"
 
+# color scheme
 typeset -A ZSH_HIGHLIGHT_STYLES
 ZSH_HIGHLIGHT_STYLES[default]=none
 ZSH_HIGHLIGHT_STYLES[unknown-token]='fg=001'
