@@ -8,6 +8,7 @@ local opts =  { noremap = true, silent = true }
 -- Leader: Space
 vim.g.mapleader = " "
 vim.api.nvim_set_keymap('n', '<Space>', '<NOP>', opts)
+vim.api.nvim_set_keymap('n', '<F1>', '<NOP>', opts)
 
 -- Jump movements (within buffer)
 vim.api.nvim_set_keymap('n', '<Leader>fb', '<cmd>e#<cr>', opts) -- just like having all jump / telescope movements w same leaders
