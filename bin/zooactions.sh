@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # to use: replace username with your Yale NetID
-# Patrick SebaRaj, YC '24
+# Patrick SebaRaj, Yale College '24
 
 username=pds36
 
@@ -9,7 +9,7 @@ while getopts 'cd:u:' OPTION; do
   case "$OPTION" in
 	c)
 	  echo "Connecting $username to the Zoo..."
-	  ssh -i ~/.ssh/zoo $username@node.zoo.cs.yale.edu
+	  ssh $username@node.zoo.cs.yale.edu
 	  ;;
 	d)
 	  downloadtarget="$OPTARG"
