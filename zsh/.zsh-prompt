@@ -18,6 +18,6 @@ zstyle ':vcs_info:*' check-for-changes true
 # zstyle ':vcs_info:git:*' formats " %r/%S %b %m%u%c "
 zstyle ':vcs_info:git:*' formats " %{$fg_bold[blue]%}(%{$fg[yellow]%}%m%u%c%{$fg[yellow]%}%{$fg_bold[blue]%} %b%{$fg_bold[blue]%})"
 
-PROMPT="%B%{$fg_bold[blue]%}[%{$fg[white]%}p%{$fg[red]%}@%{$fg[white]%}s%{$fg_bold[blue]%}] %(?:%{$fg_bold[white]%}➜ :%{$fg_bold[red]%}➜ )%{$fg[blue]%}%c%{$reset_color%}"
+PROMPT="%B%{$fg_bold[blue]%}[%{$fg[white]%}pds%{$fg[red]%}@%{$fg[white]%}local%{$fg_bold[blue]%}] %(?:%{$fg_bold[white]%}➜ :%{$fg_bold[red]%}➜ )%{$fg[blue]%}%c%{$reset_color%}"
 PROMPT+="\$vcs_info_msg_0_ "
 # https://stevelosh.com/blog/2010/02/my-extravagant-zsh-prompt/

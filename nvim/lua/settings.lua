@@ -43,4 +43,4 @@ vim.opt.splitbelow = true
 vim.opt.laststatus = 3
 
 -- disable for actual use, just for ease of setup
--- vim.opt.mouse = "a"
+vim.opt.mouse = "a"
