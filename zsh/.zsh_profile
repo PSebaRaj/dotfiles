@@ -22,3 +22,6 @@ export EDITOR='nvim'
 export TERMINAL='iterm2'
 export BROWSER='chrome'
 
+export PATH="$PATH:/Applications/CMake.app/Contents/bin"
+export PATH="$PATH:$HOME/.cargo/bin"
+export PATH="$PATH:$PYENV_ROOT/shims"

@@ -68,6 +68,9 @@ return require('packer').startup(function(use)
 	use 'rmehri01/onenord.nvim'
 	use 'jacoborus/tender.vim'
 
+	-- TO REMOVE
+	use 'ThePrimeagen/vim-be-good'
+
 	if packer_bootstrap then
 		require('packer').sync()
 	end

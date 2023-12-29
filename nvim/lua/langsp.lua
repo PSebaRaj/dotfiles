@@ -19,7 +19,8 @@ require'lspconfig'.gopls.setup{
 		-- Diagnostics
 		vim.keymap.set("n", "<Leader>dj", vim.diagnostic.goto_next, { buffer=0 })
 		vim.keymap.set("n", "<Leader>dk", vim.diagnostic.goto_prev, { buffer=0 })
-		vim.keymap.set("n", "<Leader>dd", "<cmd>Telescope diagnostics<cr>", { buffer=0 })
+		vim.keymap.set("n", "<Leader>da", "<cmd>Telescope diagnostics<cr>", { buffer=0 })
+		vim.keymap.set("n", "<Leader>dd", vim.diagnostic.open_float, { buffer=0 })
 
 		-- Rename (USE OVER <Leader>rw and <Leader>ri)
 		vim.keymap.set("n", "<Leader>rr", vim.lsp.buf.rename, { buffer=0 })
@@ -52,7 +53,8 @@ require'lspconfig'.tsserver.setup{
 		-- Diagnostics
 		vim.keymap.set("n", "<Leader>dj", vim.diagnostic.goto_next, { buffer=0 })
 		vim.keymap.set("n", "<Leader>dk", vim.diagnostic.goto_prev, { buffer=0 })
-		vim.keymap.set("n", "<Leader>dd", "<cmd>Telescope diagnostics<cr>", { buffer=0 })
+		vim.keymap.set("n", "<Leader>da", "<cmd>Telescope diagnostics<cr>", { buffer=0 })
+		vim.keymap.set("n", "<Leader>dd", vim.diagnostic.open_float, { buffer=0 })
 
 		-- Rename (USE OVER <Leader>rw and <Leader>ri)
 		vim.keymap.set("n", "<Leader>rr", vim.lsp.buf.rename, { buffer=0 })
@@ -82,7 +84,8 @@ require'lspconfig'.pyright.setup{
 		-- Diagnostics
 		vim.keymap.set("n", "<Leader>dj", vim.diagnostic.goto_next, { buffer=0 })
 		vim.keymap.set("n", "<Leader>dk", vim.diagnostic.goto_prev, { buffer=0 })
-		vim.keymap.set("n", "<Leader>dd", "<cmd>Telescope diagnostics<cr>", { buffer=0 })
+		vim.keymap.set("n", "<Leader>da", "<cmd>Telescope diagnostics<cr>", { buffer=0 })
+		vim.keymap.set("n", "<Leader>dd", vim.diagnostic.open_float, { buffer=0 })
 
 		-- Rename (USE OVER <Leader>rw and <Leader>ri)
 		vim.keymap.set("n", "<Leader>rr", vim.lsp.buf.rename, { buffer=0 })
@@ -111,7 +114,8 @@ require'lspconfig'.clangd.setup{
 		-- Diagnostics
 		vim.keymap.set("n", "<Leader>dj", vim.diagnostic.goto_next, { buffer=0 })
 		vim.keymap.set("n", "<Leader>dk", vim.diagnostic.goto_prev, { buffer=0 })
-		vim.keymap.set("n", "<Leader>dd", "<cmd>Telescope diagnostics<cr>", { buffer=0 })
+		vim.keymap.set("n", "<Leader>da", "<cmd>Telescope diagnostics<cr>", { buffer=0 })
+		vim.keymap.set("n", "<Leader>dd", vim.diagnostic.open_float, { buffer=0 })
 
 		-- Rename (USE OVER <Leader>rw and <Leader>ri)
 		vim.keymap.set("n", "<Leader>rr", vim.lsp.buf.rename, { buffer=0 })
